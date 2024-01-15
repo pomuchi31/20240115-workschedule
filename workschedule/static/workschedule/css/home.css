@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  flex: 1;
+  padding: 10px 20px;
+  border: none;
+  background-color: #71aded;
+  color: white;
+  font-size: 44px;
+  cursor: pointer;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.box:hover {
+  background-color: #2b83e8;
+}
+

@@ -1,0 +1,59 @@
+/* ページ全体のスタイル */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* フォームのスタイル */
+form {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* ラベルのスタイル */
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* 入力フィールドのスタイル */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 18px;
+}
+
+/* ログインボタンのスタイル */
+button[type="submit"] {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* エラーメッセージのスタイル */
+p {
+  color: rgb(255, 98, 0);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* CSRFトークンのスタイル（非表示） */
+input[name="csrf_token"] {
+  display: none;
+}

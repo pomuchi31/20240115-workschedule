@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load django_bootstrap5 %}
+{% block extraheader %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'workschedule/css/home.css' %}">
+{% endblock %}
+{% block main %}
+<div class="container">
+  <a href="{% url 'surveyCalendar' %}" class="box">当直希望を記入する</a>
+  <div class="box">当直を確認する</div>
+  <a href="{% url 'personalinfo_input' %}" class="box">基本情報登録</a>
+</div>
+{% endblock %}

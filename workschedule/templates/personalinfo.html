@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load django_bootstrap5 %}
+{% block extraheader %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'workschedule/css/personalinfo.css' %}">
+{% endblock %}
+{% block main %}
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">保存</button>
+</form>
+{% endblock %}
